@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="About Me - Sagar Kalyan">
+  <meta name="author" content="sagar kalyan">
+  <title>About Me - Sagar Kalyan</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="https://getbootstrap.com/docs/4.1/examples/album/album.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/header/header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+  </style>
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(function()
+      {
+        $(".menu-toggle").on("click",function(){
+          // $("#menu-primary").slideToggle();
+          $(".menu-primary").toggleClass('menu-expand');
+        })
+      })
+    });
+  </script>
+  <header>
+    <div class="div-header">
+
+      <div class="logo">
+        <a href="{% url 'index' %}">
+          <!-- <img src="images/home/logo-name.png" alt="logo" width="auto" height="38" style="margin-top:3px;" /> -->
+          <div class="logoname" >Sagar<span id="span-peek">Kalyan</span>.com</div>
+        </a>
+      </div>
+
+      <div class="nav-bar">
+        <nav id="site-navigation" class="main-navigation">
+          <button class="menu-toggle"><i class="fas fa-bars fa-lg"></i> Menu</button>
+          <ul class="menu-primary">
+            <a href="https://www.youtube.com/channel/UCKjZjkbjRxiks2MbTdTSh2Q"><li>Youtube</li></a>
+            <a href="{% url 'blogs' %}"><li>Blogs</li></a>
+            <a href="{% url 'about' %}"><li>About Me</li></a>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main role="main">
+
+    <div class="div-main">
+      <div class="about-main-inside">
+        <h1>Hi, I'm Sagar Kalyan.</h1>
+        <div class="image"><img src="{% static '20181230_192000.jpg' %}" width="250px"></div>
+        <p class="para-large">Well, how should I describe myself?</p>
+        <p class="para-medium">I'm a Web Developer.</p>
+        <p>Now, I'm sharing every lesson I learn along the way through this blogging platform.
+          Here I will provide some useful information regarding the programming, Search Engine Optimization,
+          Learning life lessons, making money online, How to build a startup Company,
+          Starting your own Personal Brand and lots of resources related to your goals, career, creativity.
+        </p>
+        <h3>Here's what I'm up to right now.</h3>
+        <p class="para-medium">Personal Brand</p>
+        <p class="para-long">It's not about becoming popular or making money,
+          But the main reason why i started this is because of learning and doing something good in my life.
+          I would like to share my life journey and great adventure in my own way.
+          You can join me and have a really thrilling experience.
+          It's all about HUSTLE, Self Awareness, Hard Work, Exposure, Patience, Empathy.
+        </p>
+        <p class="para-medium">STARTED A BLOG</p>
+        <p class="para-long">Now Days, starting a blog is really easy for anyone to begin from scratch.
+          As most of the people don't need to build the themes.
+          There are several platforms to start a blog, one of them is Wordpress.
+          It's one of the best framework to manage content and an individual can start a blog within 30 mins.
+          It takes no time to start a blog.</p>
+
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p> &copy; Sagarkalyan (2019)</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>
